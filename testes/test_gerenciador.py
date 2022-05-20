@@ -35,8 +35,8 @@ def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_id():
 def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_titulo():
     TAREFAS.append(
         {
-            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            "titulo": "titulo 1",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+            "titulo": "titulo 2",
             "descricao": "descricao 1",
             "estado": "finalizado",
         }
@@ -46,8 +46,8 @@ def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_titulo():
 def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_descricao():
     TAREFAS.append(
         {
-            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            "titulo": "titulo 1",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+            "titulo": "titulo 3",
             "descricao": "descricao 1",
             "estado": "finalizado",
         }
@@ -57,13 +57,13 @@ def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_descricao():
 def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_um_estado():
     TAREFAS.append(
         {
-            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            "titulo": "titulo 1",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+            "titulo": "titulo 4",
             "descricao": "descricao 1",
             "estado": "finalizado",
         }
     )
-    
+
     cliente = TestClient(app)
     resposta = cliente.get("/tarefas")
     assert "id" in resposta.json().pop()
