@@ -1,7 +1,7 @@
-tarefa = {"titulo": "Fazer nada", "descrição": "nada mesmo"}
+tarefa = {"titulo":"Fazer nada","descrição":"nada mesmo"}
 # print(tarefa['titulo'])
 
-lista = [tarefa, {"titulo": "Daniel", "descrição": "desenvolvedor"}]
+lista = [tarefa, {"titulo":"Daniel","descrição":"desenvolvedor"}]
 print(lista)
 
 lista.append({"titulo": "Batata"})
