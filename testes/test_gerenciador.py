@@ -31,6 +31,39 @@ def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_id():
             "estado": "finalizado",
         }
     )
+
+def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_titulo():
+    TAREFAS.append(
+        {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "titulo": "titulo 1",
+            "descricao": "descricao 1",
+            "estado": "finalizado",
+        }
+    )
+
+
+def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_descricao():
+    TAREFAS.append(
+        {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "titulo": "titulo 1",
+            "descricao": "descricao 1",
+            "estado": "finalizado",
+        }
+    )
+
+
+def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_um_estado():
+    TAREFAS.append(
+        {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "titulo": "titulo 1",
+            "descricao": "descricao 1",
+            "estado": "finalizado",
+        }
+    )
+    
     cliente = TestClient(app)
     resposta = cliente.get("/tarefas")
     assert "id" in resposta.json().pop()
