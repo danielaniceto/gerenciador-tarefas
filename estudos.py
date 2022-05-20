@@ -4,7 +4,7 @@ tarefa = {"titulo":"Fazer nada","descrição":"nada mesmo"}
 lista = [tarefa, {"titulo":"Daniel","descrição":"desenvolvedor"}]
 print(lista)
 
-lista.append({"titulo": "Batata"})
+lista.append({"titulo":"Batata"})
 
 for tarefa in lista:
     print(tarefa)
